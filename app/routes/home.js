@@ -6,7 +6,6 @@ import { bindActionCreators } from '../../deps/redux.js'
 import { getLocation } from '../modules/route/selectors.js'
 
 import Page from '../components/layout/page.js'
-import DisqusCount from '../components/disqus/disqusCount.js'
 import Article from '../components/blocks/article.js'
 import Category from '../components/blocks/category.js'
 import blocks from '../styles/blocks.js'
@@ -33,9 +32,9 @@ class Home extends PureComponent {
         let { activePanel } = this.state
         return html`
             <${Page}
-                title="Cats"
-                subtitle="React Drive CMS Demo"
-                description="Publish articles directly from Google Drive to your website."
+                title="Come Cook With Me"
+                subtitle=""
+                description="We publish videos and recipes of simple, yet yummy recipes every week!"
                 sidebarImage=${resolveAsset('/assets/default-sidebar.jpg')}
                 showLinks=${true}
             >
@@ -94,7 +93,7 @@ class Home extends PureComponent {
                         `
                     )}
                 </div>
-                <${DisqusCount} />
+                
             <//>
         `
     }

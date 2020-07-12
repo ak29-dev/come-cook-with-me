@@ -21,9 +21,7 @@ class Page extends PureComponent {
         super()
         this.toggleMenu = this.toggleMenu.bind(this)
         this.state = {
-            menuVisible: !(
-                typeof window !== 'undefined' && window.innerWidth < 769
-            ),
+            menuVisible: false,
         }
     }
 
@@ -56,7 +54,7 @@ class Page extends PureComponent {
             <div className=${css(blocks.wrapper, styles.page)}>
                 <${Helmet}
                     title=${title}
-                    titleTemplate=${'%s - React Drive CMS'}
+                    titleTemplate=${'%s'}
                     meta=${[
                         { 'char-set': 'utf-8' },
                         { name: 'description', content: title },

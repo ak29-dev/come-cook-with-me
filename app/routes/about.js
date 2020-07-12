@@ -18,7 +18,7 @@ let About = () => html`
                 className=${css(styles.image)}
             />
             <div className=${css(styles.info)}>
-                <h1 className=${css(styles.title)}>React Drive CMS Demo</h1>
+                <h1 className=${css(styles.title)}> - Come Cook With Me</h1>
                 <p className=${css(styles.p)}>
                     A demo site to showcase the use of Google Drive as a Content
                     Management System. Write articles in Google Docs and publish

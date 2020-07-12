@@ -14,18 +14,6 @@ class Footer extends PureComponent {
                         menuVisible && styles.topNarrow
                     )}
                 >
-                    <${Link}
-                        to="/about"
-                        title="About"
-                        className=${css(styles.profileLink)}
-                    >
-                        <img
-                            src=${resolveAsset('/assets/profile-1.jpg')}
-                            className=${css(styles.profile)}
-                            alt="user-image"
-                        />
-                    <//>
-
                     <div
                         className=${css(
                             styles.credits,

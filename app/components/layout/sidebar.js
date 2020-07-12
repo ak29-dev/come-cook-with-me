@@ -32,18 +32,12 @@ class Sidebar extends PureComponent {
                     >
                         <a
                             className=${css(styles.button)}
-                            href="https://docs.google.com/folderview?id=0B0A_zASTMp9WU0NMYW9wXzVQWjg&usp=drivesdk"
+                            href="https://www.youtube.com/channel/UCISnn_IZKreFfaz3A14ogYg"
                             target="_blank"
                         >
-                            Original posts on Drive
+                            Go to Youtube channel!
                         </a>
-                        <a
-                            className=${css(styles.button)}
-                            href="https://github.com/misterfresh/react-drive-cms/tree/master"
-                            target="_blank"
-                        >
-                            Source on GitHub
-                        </a>
+                        
                     </div>
                 </div>
             </aside>

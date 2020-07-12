@@ -50,29 +50,6 @@ class Menu extends Component {
                             Home
                         <//>
                     </li>
-                    <li className=${css(styles.item)}>
-                        <i className=${'fas fa-user ' + css(styles.icon)} />
-                        <${Link}
-                            to="/about"
-                            title="About"
-                            className=${css(styles.itemLink)}
-                        >
-                            About
-                        <//>
-                    </li>
-                    <li className=${css(styles.item)}>
-                        <i
-                            className=${'fas fa-paper-plane ' +
-                            css(styles.icon)}
-                        />
-                        <${Link}
-                            to="/contact"
-                            title="Contact"
-                            className=${css(styles.itemLink)}
-                        >
-                            Contact
-                        <//>
-                    </li>
                 </ul>
                 <hr className=${css(styles.separator)} />
                 <ul className=${css(styles.list)}>

@@ -26,9 +26,7 @@ class Article extends Component {
         super()
         this.toggleMenu = this.toggleMenu.bind(this)
         this.state = {
-            menuVisible: !(
-                typeof window !== 'undefined' && window.innerWidth < 769
-            ),
+            menuVisible: false,
         }
     }
 
@@ -85,7 +83,7 @@ class Article extends Component {
             <div className=${css(blocks.wrapper, styles.page)}>
                 <${Helmet}
                     title=${activeArticle.title}
-                    titleTemplate=${'%s - React Drive CMS'}
+                    titleTemplate=${'%s - Come Cook With Me'}
                     meta=${[
                         { 'char-set': 'utf-8' },
                         { name: 'description', content: activeArticle.title },
@@ -122,19 +120,14 @@ class Article extends Component {
                             menuVisible && styles.contentNarrow
                         )}
                     >
-                        <h1 id="article-title" className=${css(styles.title)}>
-                            ${activeArticle.title}
-                        </h1>
-                        <p className="{css(styles.p)}">
-                            ${activeArticle.subtitle}
-                        </p>
                         <div
                             className=${css(styles.text)}
                             dangerouslySetInnerHTML=${{ __html: activeText }}
                         />
-                        <${DisqusThread}
-                            id=${activeArticle.id}
-                            title=${activeArticle.title}
+                    </section>
+                    <section>
+                        <center
+                            dangerouslySetInnerHTML=${{ __html: activeArticle.ytLink }}
                         />
                     </section>
                     <${Footer}

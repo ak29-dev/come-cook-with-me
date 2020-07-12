@@ -51,6 +51,7 @@ class Drive extends Api {
                     postId: row.gsx$postid.$t,
                     imageId: row.gsx$imageid.$t,
                     lastUpdated: row.gsx$lastupdated.$t,
+                    ytlink: row.gsx$ytlink.$t,
                 }))
                 .forEach((row) => {
                     let category = {}
@@ -74,6 +75,7 @@ class Drive extends Api {
                             row.title,
                             'article'
                         )}`,
+                        ytLink: row.ytlink
                     }
 
                     if (existingCategory) {

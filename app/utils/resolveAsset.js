@@ -11,5 +11,5 @@ export default function resolveAsset(uri) {
         ? ''
         : '/' + conf.local
 
-    return base + root + uri
+    return base + uri
 }
