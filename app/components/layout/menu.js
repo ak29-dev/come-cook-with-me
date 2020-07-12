@@ -31,6 +31,10 @@ class Menu extends Component {
         }
     }
 
+    updateParent() {
+        this.props.callback()
+    }
+
     render() {
         let { categories, articles, menuVisible } = this.props
         let { activeCategory } = this.state
@@ -94,6 +98,7 @@ class Menu extends Component {
                                                         className=${css(
                                                             styles.subItemLink
                                                         )}
+                                                        onClick=${this.updateParent}
                                                     >
                                                         ${article.title}
                                                     <//>

@@ -68,7 +68,7 @@ class Page extends PureComponent {
                     <div className=${css(styles.bar)} />
                     <div className=${css(styles.bar)} />
                 </button>
-                <${Menu} menuVisible=${menuVisible} />
+                <${Menu} menuVisible=${menuVisible} callback=${this.toggleMenu} />
                 <main
                     className=${css(
                         blocks.wrapper,

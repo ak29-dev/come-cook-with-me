@@ -81,14 +81,6 @@ let Article = ({ article, category }) => html`
             ${article.subtitle}
         </p>
         <p class="meta">
-            <span
-                title=${'Comments for ' + article.title}
-                data-disqus-url=${window.location.protocol +
-                window.location.hostname +
-                article.uri}
-                data-disqus-identifier=${article.id}
-                class="disqus-comment-count"
-            />
              - Published in :
             <${Link}
                 title=${category.title}
