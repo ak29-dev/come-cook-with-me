@@ -47,7 +47,7 @@ class Home extends PureComponent {
                         onClick=${this.setActivePanel}
                         data-panel="posts"
                     >
-                        Posts
+                        Recipes
                     </button>
                     <button
                         className=${css(
