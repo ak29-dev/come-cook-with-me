@@ -98,7 +98,7 @@ class Menu extends Component {
                                                         className=${css(
                                                             styles.subItemLink
                                                         )}
-                                                        onClick=${this.updateParent}
+                                                        onClick=${this.updateParent.bind(this)}
                                                     >
                                                         ${article.title}
                                                     <//>
